@@ -1,0 +1,141 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+body {
+  width: 400px;
+  min-height: 400px;
+  margin: 0;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+}
+li a {
+  text-decoration: underline;
+  color: #0288d1;
+}
+.mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+.mdl-layout__header-row {
+  padding: 0;
+}
+#quickstart-sign-in-status {
+  font-weight: bold;
+}
+pre {
+  overflow-x: scroll;
+  line-height: 18px;
+}
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+h3 {
+  background: url('firebase-logo.png') no-repeat;
+  background-size: 40px;
+  padding-left: 50px;
+  line-height: 40px;
+}
+
+.quickstart-user-details-container {
+    width: 100%;
+    text-align: center;
+}
+.quickstart-user-details-container *{box-sizing: border-box;}
+button#quickstart-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    min-height: 60px;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#quickstart-button img {
+    max-width: 100%;
+    height: 60px;
+}
+div#afterlogin {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.form-group {
+    width: 100%;
+    margin-bottom: -1px;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 13px 10px;
+    font-size: 16px;
+}
+div#afterlogin label{float: left;width: 50%;}
+#free, #uname {
+    float: left;
+    width: 50%;
+}
+.btn-custom {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#afterlogin label img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    margin-right: 10px;
+}
+div#afterlogin label:after {
+    content: ":";
+    float: right;
+    margin: 0 10px 0 0;
+}
+#quickstart-button .sign-out {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    max-width: 35px;
+    height: auto;
+}
+div#afterlogin .btn-custom {
+    margin: 0 auto;
+    float: none;
+    display: block;
+    position: relative;
+    top: 25px;
+}
+.sign-btn:not(.signout) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-60%);
+    -o-transform: translate(0,-60%);
+    -moz-transform: translate(0,-60%);
+    -webkit-transform: translate(0,-60%);
+}

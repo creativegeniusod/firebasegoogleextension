@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2016 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sign In in Chrome Extensions Example</title>
+
+  <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+  <!-- ***************************************************************************************
+       * TODO(DEVELOPER): Make sure you are importing the latest version of the Firebase JS. *
+       *************************************************************************************** -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="credentials.js"></script>
+  <style>
+  * {
+    box-sizing: border-box;
+}
+.container {
+    width: 1500px;
+    float: left;
+    margin-left: 190px;
+    margin-top: 20px;
+}
+.columns {
+    float: left;
+    width: 45.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 35px;
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+span.success img {
+    max-width: 45px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-body{padding-bottom: 50px;}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <h1>Account type</h1>
+    <div class="columns">
+	  <ul class="price">
+		<li class="header selected"><span class="success"><img src="success.png"></span> Free</li>
+		<li class="grey"><button type="button" class="button">Sign Up</button></li>
+	  </ul>
+	</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="grey"> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Sign Up</button></li>
+  </ul>
+</div>
+
+
+   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-title text-center" style="min-height:150px;">Paypal Mockup Screen</h2>
+          <p class="text-center"><button class="btn-custom"> Make Payment </button></p>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
